@@ -42,7 +42,7 @@ Queremos consumir una API que retorna una lista de usuarios, y mostrarla al usua
 
 - Puedes asumir que la API responde con un JSON como este:
 
-```
+```json
 [
   {
     "first_name": "Ana",

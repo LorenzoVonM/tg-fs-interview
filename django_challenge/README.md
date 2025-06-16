@@ -48,6 +48,36 @@ Queremos filtrar los usuarios por edad mínima y mejorar el output de la API.
 
 ## 🕒 Tiempo estimado: 25 minutos
 
+---------------------------------
+
+## ⭐ Reto adicional (opcional si terminas antes)
+
+Si terminas los pasos anteriores y aún tienes tiempo, intenta resolver el siguiente reto adicional:
+
+### 🧩 Agrega una estadística al endpoint
+
+Modifica la vista `UserListAPIView` para que, además de retornar la lista de usuarios, también devuelva un campo llamado `"average_age"` que indique el **promedio de edad** de los usuarios en el queryset final (ya filtrado, si aplica).
+
+📌 La respuesta JSON debería tener esta estructura:
+
+```json
+{
+  "average_age": 27.5,
+  "users": [
+    {
+      "first_name": "Ana",
+      "last_name": "García",
+      "age": 22,
+      "date_joined": "2023-11-10T12:00:00Z",
+      "full_name": "Ana García",
+      "is_adult": true
+    },
+    ...
+  ]
+}
+
+
+
 Cuando termines, realiza un commit con tus cambios. Si te queda tiempo, puedes dejar comentarios explicando tu razonamiento, esto nos ayudara a entender mas tu manera de razonar y resolver problemas.
 
 ¡Éxito!
