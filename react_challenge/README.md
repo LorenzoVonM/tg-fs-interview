@@ -57,3 +57,18 @@ Queremos consumir una API que retorna una lista de usuarios, y mostrarla al usua
 ```
 
 - No es necesario que el código funcione al ejecutarse, lo importante es la lógica que plantees.
+
+
+## ⭐ Reto adicional 
+
+Si terminas todo y aún tienes tiempo, intenta lo siguiente:
+
+### 🧩 Agrega manejo de carga y errores:
+
+1. **Loading**
+   - Mientras los datos están siendo cargados, muestra un mensaje `"Cargando usuarios..."`.
+
+2. **Error**
+   - Si ocurre un error al hacer `fetch()` (por ejemplo, si la API no responde), muestra un mensaje de error: `"No se pudo obtener la lista de usuarios."`
+
+Puedes usar estados adicionales como `isLoading` y `hasError`, o cualquier estrategia con la que te sientas cómodo/a.
