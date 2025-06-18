@@ -39,5 +39,18 @@ class UserListAPIView(APIView):
         # Add the is_Adult filed to the request if tre
         serializer.data['is_Adult'] = is_adult
 
-        return Response(serializer.data)
+        # count all users to stadistic
+        total = users.count()
+        sum_age = sum(1 for user in users)
+
+        average_age = sum_age/total
+
+        # New Response
+        return Response({
+            'average_age': average_age,
+            'users': serializer.data
+        })
+        
+
+        # return Response(serializer.data)
     
